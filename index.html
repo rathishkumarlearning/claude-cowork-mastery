@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Top 5 Claude Cowork Videos — Master Guide</title>
+<title>Claude Cowork Mastery — Video-by-Video Guide</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -15,7 +15,6 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 ::-webkit-scrollbar-track{background:var(--surface)}
 ::-webkit-scrollbar-thumb{background:var(--purple);border-radius:3px}
 
-/* Sidebar */
 .sidebar{position:fixed;left:0;top:0;width:280px;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:100;transition:transform .3s}
 .sidebar-header{padding:24px 20px;border-bottom:1px solid var(--border)}
 .sidebar-header h2{font-family:'Fredoka',sans-serif;font-size:1.1rem;background:linear-gradient(135deg,var(--orange),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -33,19 +32,15 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 .nav-link .check{width:16px;height:16px;border-radius:4px;border:1.5px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.6rem;flex-shrink:0}
 .nav-link.completed .check{background:var(--green);border-color:var(--green);color:#fff}
 
-/* Mobile toggle */
 .menu-toggle{display:none;position:fixed;top:12px;left:12px;z-index:200;width:40px;height:40px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:1.2rem;cursor:pointer;align-items:center;justify-content:center}
 
-/* Main */
 .main{margin-left:280px;max-width:900px;padding:40px 48px 120px}
 
-/* Module header */
 .module{margin-bottom:80px}
 .module-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:linear-gradient(135deg,rgba(204,120,92,.15),rgba(139,92,246,.15));border:1px solid rgba(204,120,92,.2);border-radius:20px;font-size:.72rem;font-weight:600;color:var(--orange);margin-bottom:12px;text-transform:uppercase;letter-spacing:.04em}
 .module h2{font-family:'Fredoka',sans-serif;font-size:2rem;font-weight:700;margin-bottom:8px;background:linear-gradient(135deg,var(--text),var(--text2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .module>p{color:var(--text2);font-size:.95rem;margin-bottom:32px}
 
-/* Section */
 .section{margin-bottom:48px}
 .section h3{font-size:1.3rem;font-weight:700;margin-bottom:16px;color:var(--text);display:flex;align-items:center;gap:8px}
 .section h4{font-size:1.05rem;font-weight:600;margin:20px 0 10px;color:var(--text)}
@@ -53,7 +48,6 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 .section ul,.section ol{padding-left:20px;margin-bottom:16px}
 .section li{margin-bottom:6px}
 
-/* Cards */
 .glass{background:linear-gradient(135deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;backdrop-filter:blur(10px)}
 .glass.orange{border-color:rgba(204,120,92,.2);background:linear-gradient(135deg,rgba(204,120,92,.06),rgba(204,120,92,.02))}
 .glass.purple{border-color:rgba(139,92,246,.2);background:linear-gradient(135deg,rgba(139,92,246,.06),rgba(139,92,246,.02))}
@@ -68,7 +62,6 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 .highlight-title.red{color:var(--red)}
 .highlight-title.cyan{color:var(--cyan)}
 
-/* Video card */
 .video-card{display:flex;gap:20px;padding:20px;margin-bottom:16px;background:var(--surface2);border:1px solid var(--border);border-radius:14px;transition:border-color .2s}
 .video-card:hover{border-color:var(--purple)}
 .video-thumb{width:200px;height:112px;border-radius:10px;overflow:hidden;flex-shrink:0;background:var(--surface3);position:relative;cursor:pointer}
@@ -76,54 +69,49 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 .video-thumb .play-btn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.4);opacity:0;transition:opacity .2s;font-size:2rem}
 .video-thumb:hover .play-btn{opacity:1}
 .video-info h4{font-size:.95rem;font-weight:600;margin-bottom:4px}
-.video-info .meta{font-size:.75rem;color:var(--text3);display:flex;gap:12px;margin-bottom:8px}
+.video-info .meta{font-size:.75rem;color:var(--text3);display:flex;gap:12px;margin-bottom:8px;flex-wrap:wrap}
 .video-info .tags{display:flex;flex-wrap:wrap;gap:4px}
 .video-info .tag{padding:2px 8px;background:var(--surface3);border-radius:6px;font-size:.7rem;color:var(--text2)}
 
-/* Code block */
 .code-block{position:relative;margin:16px 0;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
 .code-header{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:var(--surface2);border-bottom:1px solid var(--border);font-size:.72rem;color:var(--text3)}
 .copy-btn{background:none;border:1px solid var(--border);color:var(--text3);padding:3px 10px;border-radius:6px;font-size:.7rem;cursor:pointer;transition:all .2s}
 .copy-btn:hover{border-color:var(--purple);color:var(--purple)}
 .code-block pre{padding:16px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:.82rem;line-height:1.6;color:var(--text2)}
-.code-block code .kw{color:var(--purple2)}
-.code-block code .str{color:var(--orange)}
-.code-block code .cmt{color:var(--text3)}
 
-/* Prompt block */
 .prompt-block{position:relative;margin:16px 0;padding:16px 20px;background:linear-gradient(135deg,rgba(139,92,246,.08),rgba(204,120,92,.05));border:1px solid rgba(139,92,246,.2);border-radius:12px;font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--text);line-height:1.6}
 .prompt-block .copy-prompt{position:absolute;top:8px;right:8px;background:var(--purple);color:#fff;border:none;padding:4px 10px;border-radius:6px;font-size:.68rem;cursor:pointer;opacity:.7;transition:opacity .2s}
 .prompt-block .copy-prompt:hover{opacity:1}
 
-/* Comparison table */
 .comp-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.82rem}
 .comp-table th{padding:12px 16px;text-align:left;background:var(--surface2);color:var(--text);font-weight:600;border-bottom:1px solid var(--border)}
 .comp-table td{padding:10px 16px;border-bottom:1px solid var(--border);color:var(--text2)}
 .comp-table tr:hover td{background:rgba(139,92,246,.03)}
 
-/* Notes textarea */
 .notes-section{margin-top:24px}
 .notes-section label{display:block;font-size:.82rem;font-weight:600;color:var(--text3);margin-bottom:8px}
 .notes-section textarea{width:100%;min-height:100px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-family:'Inter',sans-serif;font-size:.85rem;color:var(--text);resize:vertical;transition:border-color .2s}
 .notes-section textarea:focus{outline:none;border-color:var(--purple)}
 .notes-section .save-indicator{font-size:.7rem;color:var(--green);margin-top:4px;opacity:0;transition:opacity .3s}
 
-/* YouTube embed */
 .yt-embed{position:relative;width:100%;padding-bottom:56.25%;margin:16px 0;border-radius:12px;overflow:hidden;background:var(--surface2)}
 .yt-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
 
-/* Checklist */
 .checklist{list-style:none;padding:0}
 .checklist li{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:.9rem}
 .checklist input[type="checkbox"]{margin-top:4px;width:18px;height:18px;accent-color:var(--purple);flex-shrink:0;cursor:pointer}
 .checklist li.done{color:var(--text3);text-decoration:line-through}
 
-/* Folder tree */
 .folder-tree{font-family:'JetBrains Mono',monospace;font-size:.82rem;line-height:2;color:var(--text2);padding:16px 20px;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin:16px 0}
 .folder-tree .dir{color:var(--purple2)}
 .folder-tree .file{color:var(--orange)}
 
-/* Responsive */
+.mark-complete-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;background:linear-gradient(135deg,var(--green),#16a34a);color:#fff;border:none;border-radius:10px;font-size:.9rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.mark-complete-btn:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(34,197,94,.3)}
+.mark-complete-btn.completed{background:var(--surface3);color:var(--text3)}
+
+.confetti-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999}
+
 @media(max-width:900px){
   .sidebar{transform:translateX(-100%)}
   .sidebar.open{transform:translateX(0)}
@@ -142,67 +130,29 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-header">
     <h2>🧠 Claude Cowork Mastery</h2>
-    <p>Top 5 Videos — Personal Guide</p>
+    <p>Video-by-Video Guide</p>
     <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
-    <div class="progress-text"><span id="progressText">0/8</span> modules completed</div>
+    <div class="progress-text"><span id="progressText">0/6 modules</span></div>
   </div>
   <nav id="sidebarNav"></nav>
 </aside>
 
 <main class="main" id="content">
 
-<!-- ============ MODULE 1 ============ -->
+<!-- ==================== MODULE 1: Alex Finn ==================== -->
 <div class="module" id="mod1">
-  <div class="module-badge">📋 Module 1</div>
-  <h2>Overview — What is Claude Cowork?</h2>
-  <p>Understand the landscape: what Cowork is, why it matters, and what each of the 5 top videos covers.</p>
+  <div class="module-badge">🎬 Module 1</div>
+  <h2>Alex Finn — "Claude Cowork is the best AI tool of 2026"</h2>
+  <p>Daily OS workflow that saves hours. 29K views · Alex Finn (108K subs)</p>
 
-  <div class="section" id="m1-what">
-    <h3>🤖 What is Claude Cowork?</h3>
-    <p>Claude Cowork is <strong>Claude Code for your entire life</strong>. It takes Anthropic's most powerful AI agent and extends it beyond just writing code — it can manipulate files on your computer, do research, write content, and perform enormous amounts of autonomous work.</p>
-    
-    <div class="glass purple">
-      <div class="highlight-title purple">💡 Key Insight</div>
-      <p>As one Anthropic employee revealed: they built the entire Cowork product <strong>in 10 days using Claude Code itself</strong>. The tool you're learning built another tool.</p>
+  <div class="section" id="m1-overview">
+    <h3>📺 Overview</h3>
+    <div class="yt-embed">
+      <iframe src="https://www.youtube.com/embed/rdURhrS4xHI" allowfullscreen loading="lazy"></iframe>
     </div>
-
-    <p><strong>Core capabilities:</strong></p>
-    <ul>
-      <li>File manipulation — read, write, edit, organize any files on your computer</li>
-      <li>Research — search the web, analyze data, compile reports</li>
-      <li>Writing — scripts, newsletters, threads, documentation</li>
-      <li>Code — build full applications, debug, deploy</li>
-      <li>Sub-agents — spawn parallel workers for simultaneous tasks</li>
-      <li>Memory — remember context about you and your projects via claude.md</li>
-    </ul>
-
-    <div class="glass orange">
-      <div class="highlight-title orange">🔥 The Iron Man Analogy (Video 4)</div>
-      <p><strong>Claude in the browser</strong> = Tony Stark without the suit. Genius, but limited — gets tired, can only be in one place, forgets between conversations.</p>
-      <p><strong>Claude Code/Cowork</strong> = The full Iron Man suit with JARVIS. Unlimited capabilities, remembers everything, has access to all your files, never loses context, everything saved on your computer.</p>
-    </div>
-  </div>
-
-  <div class="section" id="m1-videos">
-    <h3>🎬 The 5 Videos at a Glance</h3>
-
-    <table class="comp-table">
-      <thead>
-        <tr><th>#</th><th>Video</th><th>Creator</th><th>Focus</th><th>Level</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1</td><td>Claude Cowork is the best AI tool of 2026</td><td>Alex Finn (108K subs)</td><td>Daily OS Workflow</td><td>Beginner</td></tr>
-        <tr><td>2</td><td>800+ hours of Learning Claude Code in 8 min</td><td>Edmund (Anthropic sponsored)</td><td>Power Techniques</td><td>Intermediate</td></tr>
-        <tr><td>3</td><td>Introducing Cowork (Official)</td><td>Anthropic</td><td>Product Launch</td><td>Beginner</td></tr>
-        <tr><td>4</td><td>Claude Code DESTROYED Every AI Workflow Tool</td><td>Vehav</td><td>Agents & Content Army</td><td>Beginner-Intermediate</td></tr>
-        <tr><td>5</td><td>Claude Code Clearly Explained</td><td>Professor Ras Mic</td><td>Best Practices & Planning</td><td>Intermediate-Advanced</td></tr>
-      </tbody>
-    </table>
-
     <div class="video-card">
-      <div class="video-thumb" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/rdURhrS4xHI?autoplay=1\' allowfullscreen></iframe>'">
+      <div class="video-thumb">
         <img src="https://img.youtube.com/vi/rdURhrS4xHI/maxresdefault.jpg" alt="Video 1">
-        <div class="play-btn">▶</div>
       </div>
       <div class="video-info">
         <h4>Claude Cowork is the best AI tool of 2026</h4>
@@ -210,108 +160,48 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
         <div class="tags"><span class="tag">Daily OS</span><span class="tag">Morning Routine</span><span class="tag">Sub-agents</span><span class="tag">Folder System</span></div>
       </div>
     </div>
+    <p>Alex Finn introduces a "Daily OS" workflow for Claude Cowork where you type just four words every morning — "Let's start our day" — and Claude interviews you about your priorities, then autonomously completes hours of work. He demonstrates Claude scripting a YouTube video, writing an X thread, researching stocks, drafting a newsletter, and building a YouTube growth strategy — all in under 3 minutes.</p>
+  </div>
 
-    <div class="video-card">
-      <div class="video-thumb" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/Ffh9OeJ7yxw?autoplay=1\' allowfullscreen></iframe>'">
-        <img src="https://img.youtube.com/vi/Ffh9OeJ7yxw/maxresdefault.jpg" alt="Video 2">
-        <div class="play-btn">▶</div>
-      </div>
-      <div class="video-info">
-        <h4>800+ hours of Learning Claude Code in 8 minutes</h4>
-        <div class="meta"><span>Edmund</span><span>Sponsored by Anthropic</span></div>
-        <div class="tags"><span class="tag">D.R.Y.</span><span class="tag">MCP Servers</span><span class="tag">Parallel Builds</span><span class="tag">Plugins</span></div>
-      </div>
-    </div>
-
-    <div class="video-card">
-      <div class="video-thumb" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/UAmKyyZ-b9E?autoplay=1\' allowfullscreen></iframe>'">
-        <img src="https://img.youtube.com/vi/UAmKyyZ-b9E/maxresdefault.jpg" alt="Video 3">
-        <div class="play-btn">▶</div>
-      </div>
-      <div class="video-info">
-        <h4>Introducing Cowork: Claude Code for the rest of your work</h4>
-        <div class="meta"><span>Anthropic (Official)</span></div>
-        <div class="tags"><span class="tag">Official</span><span class="tag">Product Launch</span><span class="tag">Autonomous</span></div>
-      </div>
-    </div>
-
-    <div class="video-card">
-      <div class="video-thumb" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/_0xa6RVqTC8?autoplay=1\' allowfullscreen></iframe>'">
-        <img src="https://img.youtube.com/vi/_0xa6RVqTC8/maxresdefault.jpg" alt="Video 4">
-        <div class="play-btn">▶</div>
-      </div>
-      <div class="video-info">
-        <h4>Anthropic's Claude Code Just DESTROYED Every AI Workflow Tool</h4>
-        <div class="meta"><span>Vehav</span></div>
-        <div class="tags"><span class="tag">/init</span><span class="tag">/agents</span><span class="tag">Skills</span><span class="tag">Content Army</span></div>
-      </div>
-    </div>
-
-    <div class="video-card">
-      <div class="video-thumb" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/zxMjOqM7DFs?autoplay=1\' allowfullscreen></iframe>'">
-        <img src="https://img.youtube.com/vi/zxMjOqM7DFs/maxresdefault.jpg" alt="Video 5">
-        <div class="play-btn">▶</div>
-      </div>
-      <div class="video-info">
-        <h4>Claude Code Clearly Explained (and how to use it)</h4>
-        <div class="meta"><span>Professor Ras Mic</span></div>
-        <div class="tags"><span class="tag">Planning</span><span class="tag">Ask User Tool</span><span class="tag">Ralph Loops</span><span class="tag">Best Practices</span></div>
-      </div>
+  <div class="section" id="m1-dailyos">
+    <h3>☀️ Daily OS Workflow</h3>
+    <p>The core idea: instead of YOU telling AI what to do, the AI interviews YOU and figures out what it can help with. This reverses the relationship and solves the #1 problem most people have — not knowing what to use Cowork for.</p>
+    <ol>
+      <li>Open Claude Cowork every morning</li>
+      <li>Type "Let's start our day" and drag in your <code>claude.md</code> file + <code>claude/</code> folder</li>
+      <li>Claude reads your rules file and context files</li>
+      <li>Claude asks you 3 questions</li>
+      <li>You answer and say "Okay, go ahead"</li>
+      <li>Claude analyzes your to-do list, identifies tasks it can help with, proposes a plan</li>
+      <li>Spins up sub-agents to work in parallel</li>
+      <li>Saves all output to <code>outbox/</code></li>
+    </ol>
+    <div class="prompt-block">
+      <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
+      Let's start our day
     </div>
   </div>
 
-  <div class="notes-section">
-    <label>📝 My Notes — Module 1</label>
-    <textarea data-key="notes-mod1" placeholder="What stood out to me from this overview..."></textarea>
-    <div class="save-indicator">✓ Saved</div>
-  </div>
-</div>
-
-<!-- ============ MODULE 2 ============ -->
-<div class="module" id="mod2">
-  <div class="module-badge">⚙️ Module 2</div>
-  <h2>Getting Started — Setup & Installation</h2>
-  <p>Install Claude Code, configure your environment, and set up the powerful folder system.</p>
-
-  <div class="section" id="m2-install">
-    <h3>🔧 Installation</h3>
-    <p>Two ways to get started (from Video 4):</p>
-    
-    <div class="glass">
-      <p><strong>Option 1: Terminal (CLI)</strong></p>
-      <div class="code-block">
-        <div class="code-header"><span>bash</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
-        <pre><code><span class="cmt"># Mac</span>
-brew install claude-code
-
-<span class="cmt"># Or via npm</span>
-npm install -g @anthropic-ai/claude-code</code></pre>
-      </div>
-    </div>
-
-    <div class="glass">
-      <p><strong>Option 2: Desktop App (Easier)</strong></p>
+  <div class="section" id="m1-questions">
+    <h3>❓ 3 Morning Questions</h3>
+    <div class="glass orange">
+      <div class="highlight-title orange">The 3 Questions Claude Asks Every Morning</div>
       <ol>
-        <li>Download the Claude desktop app</li>
-        <li>Log in with your Claude account</li>
-        <li>Click "Cowork" to access the non-dev interface</li>
-        <li>Click "CLI" at bottom-right to switch to CLI mode</li>
+        <li><strong>What's the #1 thing that would make today a win?</strong></li>
+        <li><strong>What's on your to-do list for today?</strong></li>
+        <li><strong>Any urgent items I should know about?</strong></li>
       </ol>
     </div>
-
-    <div class="glass orange">
-      <div class="highlight-title orange">💰 Pricing</div>
-      <ul>
-        <li><strong>Claude Pro ($20/mo)</strong> — Claude Code (CLI), works on Mac & Windows</li>
-        <li><strong>Claude Max ($100/mo)</strong> — Claude Cowork (GUI), Mac only currently</li>
-      </ul>
+    <div class="glass green">
+      <div class="highlight-title green">🔑 Why This Is Genius</div>
+      <p>Instead of YOU doing creative thinking about what AI should do, the <strong>AI interviews YOU</strong> and figures it out. It's on Claude to determine how to be most helpful — not you.</p>
+      <p><em>"This solves the biggest problem most people have with Cowork — they just don't know what to do with it."</em></p>
     </div>
   </div>
 
-  <div class="section" id="m2-folder">
-    <h3>📁 The Folder System (Video 1 — Alex Finn)</h3>
-    <p>This is the foundation of the entire "Daily OS" workflow. Create a <code>claude/</code> folder in your Documents:</p>
-
+  <div class="section" id="m1-folder">
+    <h3>📁 Folder System</h3>
+    <p>The foundation of the Daily OS. Create a <code>claude/</code> folder in your Documents:</p>
     <div class="folder-tree">
       <span class="dir">📂 claude/</span><br>
       ├── <span class="file">📄 claude.md</span> — Rules file (the "brain")<br>
@@ -324,19 +214,13 @@ npm install -g @anthropic-ai/claude-code</code></pre>
       ├── <span class="dir">📂 outbox/</span> — Claude's output goes here<br>
       └── <span class="dir">📂 skills/</span> — Custom skill markdown files
     </div>
-
-    <div class="glass green">
-      <div class="highlight-title green">✅ Why This Works</div>
-      <p>The folder system gives Claude <strong>persistent context</strong> about who you are. Instead of explaining yourself every session, Claude reads your context files and knows your goals, projects, preferences, and schedule.</p>
-    </div>
-
     <div class="prompt-block">
       <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
       Create a new folder called "claude" in my Documents. Inside it, create:
 1. A claude.md file (empty for now)
 2. A "context" folder with: profile.md, portfolio.md, schedule.md, projects.md
 3. An "inbox" folder (empty)
-4. An "outbox" folder (empty)  
+4. An "outbox" folder (empty)
 5. A "skills" folder (empty)
 
 Fill profile.md with template sections: About Me, Goals, Preferences, Communication Style.
@@ -344,28 +228,34 @@ Fill projects.md with template: Project Name, Status, Description, Next Steps.
     </div>
   </div>
 
-  <div class="section" id="m2-claudemd">
-    <h3>📋 The claude.md Rules File</h3>
-    <p>The <code>claude.md</code> file is Claude's memory and instruction set. It persists across sessions.</p>
-
+  <div class="section" id="m1-subagents">
+    <h3>🔀 Sub-Agents in Action</h3>
+    <p>After you say "Okay, go ahead," Claude spins up multiple sub-agents working in parallel:</p>
     <div class="glass purple">
-      <div class="highlight-title purple">🧠 Three Ways to Create It</div>
+      <div class="highlight-title purple">📊 Alex's Example Output (2 minutes)</div>
       <ul>
-        <li><strong>Manual:</strong> Write your own rules in markdown</li>
-        <li><strong>Hash key (#):</strong> In Claude Code, press # to add instruction snippets to memory (Video 2 — Edmund)</li>
-        <li><strong>/init command:</strong> Type <code>/init</code> and Claude creates it by analyzing your folder (Video 4 — Vehav)</li>
+        <li>✅ YouTube video script (the video you're watching)</li>
+        <li>✅ 10-tweet thread about the X algorithm</li>
+        <li>✅ AI energy stocks research report</li>
+        <li>✅ Newsletter draft about building apps with Claude Code</li>
+        <li>✅ 100K subscriber YouTube strategy</li>
       </ul>
+      <p><em>"It basically completed 80% of my work for the day in 3 minutes."</em></p>
     </div>
+    <p>Sub-agents searched 100+ websites for research, wrote organized files, and saved everything to the outbox — all simultaneously.</p>
+  </div>
 
-    <h4>What goes in claude.md (from Videos 1 & 2):</h4>
-    <ul>
-      <li><strong>Daily OS rules</strong> — What to do when you say "Let's start our day"</li>
-      <li><strong>Workflow instructions</strong> — How to handle inbox, outbox, context</li>
-      <li><strong>Your preferences</strong> — Writing style, tone, format preferences</li>
-      <li><strong>Project rules</strong> — Coding conventions, tech stack, patterns</li>
-      <li><strong>End-of-day routine</strong> — Summary, priorities for tomorrow</li>
-    </ul>
+  <div class="section" id="m1-endofday">
+    <h3>🌙 End of Day Routine</h3>
+    <div class="prompt-block">
+      <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
+      End of day
+    </div>
+    <p>Claude will summarize everything completed, list unfinished tasks, and suggest priorities for tomorrow.</p>
+  </div>
 
+  <div class="section" id="m1-prompts">
+    <h3>📋 Key Prompts & Templates</h3>
     <div class="prompt-block">
       <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
       # Claude Daily Operating System
@@ -393,137 +283,53 @@ When I say "end of day":
 - Always check inbox/ for files to review
 - Reference context/ files for personalization
     </div>
-  </div>
 
-  <div class="section" id="m2-init">
-    <h3>⚡ The /init Command (Video 4)</h3>
-    <p>One of the most powerful commands — creates a claude.md by analyzing your project folder:</p>
-    
-    <div class="code-block">
-      <div class="code-header"><span>Claude Code CLI</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
-      <pre><code>/init</code></pre>
-    </div>
-
-    <p>This creates a claude.md file that includes:</p>
+    <p><strong>Links from Alex:</strong></p>
     <ul>
-      <li>Project overview and structure</li>
-      <li>How to work with the content</li>
-      <li>File organization rules</li>
-      <li>Everything Claude needs to know to work in this folder</li>
-    </ul>
-
-    <div class="glass cyan">
-      <div class="highlight-title cyan">💡 Pro Tip</div>
-      <p>Run <code>/init</code> in every project folder. Next time you open that folder, Claude already knows what's going on — no explanations needed.</p>
-    </div>
-  </div>
-
-  <div class="notes-section">
-    <label>📝 My Notes — Module 2</label>
-    <textarea data-key="notes-mod2" placeholder="Setup steps I need to do..."></textarea>
-    <div class="save-indicator">✓ Saved</div>
-  </div>
-</div>
-
-<!-- ============ MODULE 3 ============ -->
-<div class="module" id="mod3">
-  <div class="module-badge">☀️ Module 3</div>
-  <h2>The Daily OS Workflow</h2>
-  <p>Alex Finn's morning-to-night system that saves hours every day. From Video 1.</p>
-
-  <div class="yt-embed">
-    <iframe src="https://www.youtube.com/embed/rdURhrS4xHI" allowfullscreen loading="lazy"></iframe>
-  </div>
-
-  <div class="section" id="m3-morning">
-    <h3>🌅 Morning Routine — "Let's Start Our Day"</h3>
-    <p>Every morning, open Claude Cowork and type just four words:</p>
-
-    <div class="prompt-block">
-      <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
-      Let's start our day
-    </div>
-
-    <p>Then drag in your claude.md file and the claude/ folder. Claude will:</p>
-    <ol>
-      <li>Read the rules file to understand the workflow</li>
-      <li>Read all context files to understand who you are</li>
-      <li>Ask you <strong>3 questions</strong>:</li>
-    </ol>
-
-    <div class="glass orange">
-      <div class="highlight-title orange">❓ The 3 Morning Questions</div>
-      <ol>
-        <li><strong>What's the #1 thing that would make today a win?</strong></li>
-        <li><strong>What's on your to-do list for today?</strong></li>
-        <li><strong>Any urgent items I should know about?</strong></li>
-      </ol>
-    </div>
-
-    <div class="glass green">
-      <div class="highlight-title green">🔑 Why This Is Genius</div>
-      <p>Instead of YOU telling AI what to do (which requires creative thinking most people don't want to do), the <strong>AI interviews YOU</strong> and figures out what it can do. It reverses the relationship — now it's on Claude to figure out how to be most helpful.</p>
-      <p><em>"This solves the biggest problem most people have with Cowork — they just don't know what to do with it."</em></p>
-    </div>
-  </div>
-
-  <div class="section" id="m3-execution">
-    <h3>⚡ How Claude Executes</h3>
-    <p>After you answer the 3 questions and say "Okay, go ahead":</p>
-    <ol>
-      <li>Claude analyzes your to-do list</li>
-      <li>Identifies which tasks it can help with</li>
-      <li>Proposes a plan with specific deliverables</li>
-      <li>Spins up <strong>sub-agents</strong> to work in parallel</li>
-      <li>Saves all output to the <code>outbox/</code> folder</li>
-    </ol>
-
-    <div class="glass">
-      <div class="highlight-title purple">📊 Alex Finn's Example Output (2 minutes)</div>
-      <ul>
-        <li>✅ YouTube video script (the video you're watching)</li>
-        <li>✅ 10-tweet thread about the X algorithm</li>
-        <li>✅ AI energy stocks research report</li>
-        <li>✅ Newsletter draft about building apps with Claude Code</li>
-        <li>✅ 100K subscriber YouTube strategy</li>
-      </ul>
-      <p><em>"It basically completed 80% of my work for the day in 3 minutes."</em></p>
-    </div>
-  </div>
-
-  <div class="section" id="m3-endofday">
-    <h3>🌙 End of Day Routine</h3>
-    <div class="prompt-block">
-      <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
-      End of day
-    </div>
-    <p>Claude will:</p>
-    <ul>
-      <li>Summarize everything completed today</li>
-      <li>List unfinished tasks</li>
-      <li>Suggest priorities for tomorrow</li>
+      <li>Daily OS Starter Prompt — linked in his video description</li>
+      <li>Full claude.md template — linked in his video description</li>
+      <li><a href="https://www.youtube.com/watch?v=rdURhrS4xHI" target="_blank" style="color:var(--orange)">Watch the full video →</a></li>
     </ul>
   </div>
 
   <div class="notes-section">
-    <label>📝 My Notes — Module 3</label>
-    <textarea data-key="notes-mod3" placeholder="How I'll adapt this workflow for my setup..."></textarea>
+    <label>📝 My Notes — Module 1 (Alex Finn)</label>
+    <textarea data-key="notes-v1" placeholder="What stood out, what I want to try..."></textarea>
     <div class="save-indicator">✓ Saved</div>
   </div>
+  <button class="mark-complete-btn" data-module="mod1" onclick="toggleModuleComplete(this)">✅ Mark Complete</button>
 </div>
 
-<!-- ============ MODULE 4 ============ -->
-<div class="module" id="mod4">
-  <div class="module-badge">⚡ Module 4</div>
-  <h2>Claude Code Power Techniques</h2>
-  <p>Advanced workflows from Edmund (800+ hours) and Professor Ras Mic.</p>
+<!-- ==================== MODULE 2: Edmund ==================== -->
+<div class="module" id="mod2">
+  <div class="module-badge">🎬 Module 2</div>
+  <h2>Edmund — "800+ hours of Learning Claude Code in 8 minutes"</h2>
+  <p>Power techniques from a solo dev with 800+ hours. Sponsored by Anthropic.</p>
 
-  <div class="section" id="m4-dry">
-    <h3>🔄 D.R.Y. — Don't Repeat Yourself (Video 2)</h3>
-    <p>Edmund's #1 principle after 800+ hours: stop repeating yourself to Claude.</p>
+  <div class="section" id="m2-overview">
+    <h3>📺 Overview</h3>
+    <div class="yt-embed">
+      <iframe src="https://www.youtube.com/embed/Ffh9OeJ7yxw" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="video-card">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/Ffh9OeJ7yxw/maxresdefault.jpg" alt="Video 2">
+      </div>
+      <div class="video-info">
+        <h4>800+ hours of Learning Claude Code in 8 minutes</h4>
+        <div class="meta"><span>Edmund</span><span>Sponsored by Anthropic</span></div>
+        <div class="tags"><span class="tag">D.R.Y.</span><span class="tag">MCP Servers</span><span class="tag">Parallel Builds</span><span class="tag">Plugins</span></div>
+      </div>
+    </div>
+    <p>Edmund shares hard-won lessons from 800+ hours of solo development with Claude Code. He covers the D.R.Y. principle (stop repeating yourself), essential MCP servers, how to properly use sub-agents for parallel feature building, and the new plugins system for cloning power-user setups. Practical, developer-focused, and concise.</p>
+  </div>
+
+  <div class="section" id="m2-dry">
+    <h3>🔄 D.R.Y. — Don't Repeat Yourself</h3>
+    <p>Edmund's #1 principle: stop repeating the same instructions to Claude every session.</p>
 
     <h4>1. Memory Snippets (# key)</h4>
-    <p>Press <code>#</code> in Claude Code to add instruction snippets to memory. Choose local (project) or global (all sessions). Saved to claude.md.</p>
+    <p>Press <code>#</code> in Claude Code to add instruction snippets to memory. Choose local (project) or global (all sessions). Saved to <code>claude.md</code>.</p>
 
     <h4>2. Custom Commands</h4>
     <div class="folder-tree">
@@ -535,59 +341,35 @@ When I say "end of day":
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file">run-tests.md</span>
     </div>
     <p>Commands accept arguments for flexibility. Call with <code>/</code> + command name. Build your library over time based on what you prompt repeatedly.</p>
-
-    <div class="glass green">
-      <div class="highlight-title green">✅ Edmund's Useful Commands Repo</div>
-      <p>Edmund mentions a GitHub repo with pre-built commands he uses daily for building. Search for community command libraries to jumpstart yours.</p>
-    </div>
   </div>
 
-  <div class="section" id="m4-plan">
-    <h3>🗺️ Plan Mode (Video 5)</h3>
-    <p>Press <code>Shift+Tab</code> to toggle Plan Mode. Use it for Q&A sessions before writing any code.</p>
-    
-    <div class="glass purple">
-      <div class="highlight-title purple">🎯 The Ask User Question Tool (Video 5 — KEY INSIGHT)</div>
-      <p>This is the <strong>most slept-on feature</strong> according to Professor Ras Mic. Instead of letting Claude make assumptions, force it to interview you:</p>
-    </div>
-
+  <div class="section" id="m2-mcp">
+    <h3>🌐 Favorite MCP Servers</h3>
+    <table class="comp-table">
+      <thead><tr><th>MCP Server</th><th>What It Does</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Context7</strong> ⭐</td><td>Up-to-date docs for popular libraries. Just add "use context7" to your prompt.</td></tr>
+        <tr><td><strong>Supabase</strong></td><td>Query database directly, apply migrations, create tables</td></tr>
+        <tr><td><strong>Chrome DevTools</strong></td><td>Debug and test frontend issues by controlling the browser</td></tr>
+        <tr><td><strong>Playwright</strong></td><td>Autonomous browser control — inspect DOM, console logs, test UI</td></tr>
+        <tr><td><strong>Stripe</strong></td><td>Handle payment-related features</td></tr>
+        <tr><td><strong>Vercel</strong></td><td>Look up docs, make changes to project settings</td></tr>
+      </tbody>
+    </table>
     <div class="prompt-block">
       <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
-      Read this plan file. Interview me in detail using the ask user question tool about literally anything — technical implementation, UI/UX concerns, and trade-offs. Do not start building until you've exhausted all questions.
-    </div>
-
-    <p><strong>What happens:</strong></p>
-    <ul>
-      <li>Round 1: Core workflow and technical foundation questions</li>
-      <li>Round 2: UI/UX and design decisions</li>
-      <li>Round 3: Edge cases, storage, costs, minute details</li>
-      <li>It keeps asking until it knows EXACTLY what you want</li>
-    </ul>
-
-    <div class="glass orange">
-      <div class="highlight-title orange">⚠️ Warning</div>
-      <p><em>"It will ask a LOT of questions. A couple friends got annoyed. But it's worth it — especially for end-to-end features."</em></p>
-      <p><strong>Pro tip:</strong> If you don't know the answer to a technical question, copy it and ask ChatGPT/Claude browser for advice, then paste the answer back.</p>
+      Build a new API endpoint for user authentication. Use context7 for the latest Next.js and Supabase documentation.
     </div>
   </div>
 
-  <div class="section" id="m4-parallel">
-    <h3>🔀 Parallel Feature Building (Video 2)</h3>
-    <p>Edmund's workflow for shipping features fast as a solo dev:</p>
-
-    <div class="glass">
-      <p><strong>Old way (sequential):</strong> Build frontend → Write API → Run migrations → Test → Next feature</p>
-      <p><strong>New way (parallel sub-agents):</strong> Spawn multiple sub-agents that each handle a piece simultaneously.</p>
-    </div>
-
+  <div class="section" id="m2-parallel">
+    <h3>🔀 Parallel Feature Building</h3>
     <div class="glass red">
       <div class="highlight-title red">❌ What NOT To Do With Sub-agents</div>
-      <p>Don't assign sub-agents <strong>roles</strong> (frontend dev, UX designer, product manager). Edmund tried this for hours and results were bad.</p>
+      <p>Don't assign sub-agents <strong>roles</strong> (frontend dev, UX designer, product manager). Edmund tried this for hours — results were bad.</p>
     </div>
-
     <div class="glass green">
-      <div class="highlight-title green">✅ What WORKS With Sub-agents</div>
-      <p>Assign sub-agents <strong>tasks</strong>:</p>
+      <div class="highlight-title green">✅ What WORKS — Assign Tasks, Not Roles</div>
       <ul>
         <li>Cleaning up and optimizing code</li>
         <li>Generating documentation</li>
@@ -595,170 +377,234 @@ When I say "end of day":
         <li>Reviewing UI/UX via Playwright</li>
         <li>Running tests</li>
       </ul>
-      <p><em>"Each sub-agent gets its own fresh 200K tokens. So work that would burn your main context stays efficient."</em></p>
+      <p><em>"Each sub-agent gets its own fresh 200K tokens. Work that would burn your main context stays efficient."</em></p>
     </div>
   </div>
 
-  <div class="section" id="m4-clone">
-    <h3>📦 Clone Cracked Setups — Plugins (Video 2)</h3>
-    <p>Anthropic released <strong>plugins</strong> — bundle your entire setup (commands, agents, MCP configs) into a single package.</p>
+  <div class="section" id="m2-clone">
+    <h3>📦 Clone Cracked Setups — Plugins</h3>
+    <p>Anthropic released <strong>plugins</strong> — bundle your entire setup (commands, agents, MCP configs) into one package.</p>
     <div class="code-block">
       <div class="code-header"><span>bash</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
-      <pre><code><span class="cmt"># Install someone's plugin marketplace</span>
+      <pre><code># Install someone's plugin marketplace
 claude plugin add &lt;marketplace-url&gt;
 
-<span class="cmt"># Pick and choose which plugins to install</span></code></pre>
+# Pick and choose which plugins to install</code></pre>
     </div>
-    <p>You can literally clone a Claude power user's entire workflow with a single command.</p>
+    <p>You can literally clone a Claude power user's entire workflow with a single command. Edmund published his own plugin marketplace.</p>
+  </div>
+
+  <div class="section" id="m2-excel">
+    <h3>💡 Excel at AI Coding</h3>
+    <ul>
+      <li><strong>Garbage in = garbage out.</strong> Learn basic prompt engineering to break problems into smaller pieces.</li>
+      <li><strong>Use Plan Mode</strong> for Q&A sessions before writing code.</li>
+      <li><strong>AI generates code, but humans own it.</strong> Start a new session and ask Claude to review the code it just wrote before pushing to production.</li>
+      <li><strong>Speed means nothing</strong> if your app is buggy or insecure.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="m2-takeaways">
+    <h3>🎯 Key Takeaways</h3>
+    <div class="glass purple">
+      <ol>
+        <li>Use <code>#</code> key and custom commands to stop repeating yourself</li>
+        <li>Context7 MCP server = instant up-to-date docs</li>
+        <li>Sub-agents work best with <strong>tasks</strong>, not roles</li>
+        <li>Plugins let you clone power-user setups instantly</li>
+        <li>Always review AI-generated code before production</li>
+        <li>Build your command library incrementally based on what you prompt repeatedly</li>
+      </ol>
+    </div>
   </div>
 
   <div class="notes-section">
-    <label>📝 My Notes — Module 4</label>
-    <textarea data-key="notes-mod4" placeholder="Techniques I want to try first..."></textarea>
+    <label>📝 My Notes — Module 2 (Edmund)</label>
+    <textarea data-key="notes-v2" placeholder="MCP servers to set up, commands to create..."></textarea>
     <div class="save-indicator">✓ Saved</div>
   </div>
+  <button class="mark-complete-btn" data-module="mod2" onclick="toggleModuleComplete(this)">✅ Mark Complete</button>
 </div>
 
-<!-- ============ MODULE 5 ============ -->
-<div class="module" id="mod5">
-  <div class="module-badge">🔌 Module 5</div>
-  <h2>MCP Servers & Skills</h2>
-  <p>External tools that supercharge Claude's capabilities. From Videos 2 & 4.</p>
+<!-- ==================== MODULE 3: Anthropic Official ==================== -->
+<div class="module" id="mod3">
+  <div class="module-badge">🎬 Module 3</div>
+  <h2>Anthropic Official — "Introducing Cowork"</h2>
+  <p>Official launch video from Anthropic. The product announcement.</p>
 
-  <div class="section" id="m5-mcp">
-    <h3>🌐 What Are MCP Servers?</h3>
-    <p>MCP (Model Context Protocol) servers connect AI agents to external tools and services — databases, APIs, browsers, documentation.</p>
-
-    <h4>Edmund's MCP Stack (Video 2):</h4>
-    <table class="comp-table">
-      <thead><tr><th>MCP Server</th><th>What It Does</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Context7</strong></td><td>Up-to-date documentation for popular coding libraries. Just add "use context7" to your prompt.</td></tr>
-        <tr><td><strong>Supabase</strong></td><td>Query database directly, apply migrations, create tables for new features</td></tr>
-        <tr><td><strong>Chrome DevTools</strong></td><td>Debug and test frontend issues by controlling the browser</td></tr>
-        <tr><td><strong>Playwright</strong></td><td>Autonomous browser control — inspect DOM, console logs, test UI</td></tr>
-        <tr><td><strong>Stripe</strong></td><td>Handle payment-related features</td></tr>
-        <tr><td><strong>Vercel</strong></td><td>Look up docs, make changes to project settings</td></tr>
-      </tbody>
-    </table>
-
-    <div class="glass cyan">
-      <div class="highlight-title cyan">⭐ Context7 — Edmund's #1 MCP</div>
-      <p>Solves the biggest frustration: AI referencing outdated docs. Just add two words to any prompt:</p>
-      <div class="prompt-block">
-        <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
-        Build a new API endpoint for user authentication. Use context7 for the latest Next.js and Supabase documentation.
+  <div class="section" id="m3-overview">
+    <h3>📺 Overview</h3>
+    <div class="yt-embed">
+      <iframe src="https://www.youtube.com/embed/UAmKyyZ-b9E" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="video-card">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/UAmKyyZ-b9E/maxresdefault.jpg" alt="Video 3">
+      </div>
+      <div class="video-info">
+        <h4>Introducing Cowork: Claude Code for the rest of your work</h4>
+        <div class="meta"><span>Anthropic (Official)</span><span>Product Launch</span></div>
+        <div class="tags"><span class="tag">Official</span><span class="tag">Cowork</span><span class="tag">Desktop App</span><span class="tag">Autonomous</span></div>
       </div>
     </div>
+    <p>Anthropic's official introduction of Cowork — Claude Code extended beyond coding into everyday work. Cowork gives Claude access to your desktop, files, and folders so it can perform autonomous tasks like research, writing, file manipulation, and running parallel sub-agents. It's Claude Code for non-developers.</p>
   </div>
 
-  <div class="section" id="m5-skills">
-    <h3>🎯 Skills System (Videos 1 & 4)</h3>
-    <p>Skills are markdown "playbooks" that tell Claude how to do specific tasks. Think of them as Iron Man's suit protocols (Video 4):</p>
+  <div class="section" id="m3-features">
+    <h3>⚡ Key Features</h3>
     <ul>
-      <li><strong>Stealth mode</strong> → Presentation skill</li>
-      <li><strong>Hulkbuster</strong> → Complex coding skill</li>
-      <li><strong>House Party Protocol</strong> → Multi-agent deployment</li>
+      <li><strong>File manipulation</strong> — Read, write, edit, organize any files on your computer</li>
+      <li><strong>Research</strong> — Search the web, analyze data, compile reports</li>
+      <li><strong>Writing</strong> — Scripts, newsletters, threads, documentation</li>
+      <li><strong>Autonomous tasks</strong> — Claude works independently on complex multi-step work</li>
+      <li><strong>Sub-agents</strong> — Spawn parallel workers for simultaneous tasks</li>
+      <li><strong>Folder access</strong> — Direct access to your local file system</li>
     </ul>
+  </div>
 
-    <p>Anthropic has a GitHub repo with pre-built skills: presentations, spreadsheets, PDFs, and more.</p>
-
-    <div class="folder-tree">
-      <span class="dir">📂 skills/</span><br>
-      ├── <span class="file">video-scripting.md</span><br>
-      ├── <span class="file">newsletter-writing.md</span><br>
-      ├── <span class="file">research.md</span><br>
-      └── <span class="file">social-media-threads.md</span>
+  <div class="section" id="m3-howitworks">
+    <h3>🔧 How It Works</h3>
+    <div class="glass">
+      <ul>
+        <li>Available in the Claude desktop app — click "Cowork" to access</li>
+        <li>Point it at a folder and it can read/write files within it</li>
+        <li>Uses the same Claude Code engine under the hood</li>
+        <li>Can use "CLI" mode at bottom-right to switch to terminal interface</li>
+        <li>Memory persists via <code>claude.md</code> files</li>
+      </ul>
+    </div>
+    <div class="glass purple">
+      <div class="highlight-title purple">💡 Key Fact</div>
+      <p>An Anthropic employee revealed they built the entire Cowork product <strong>in 10 days using Claude Code itself</strong>. The tool you're learning built another tool.</p>
     </div>
   </div>
 
-  <div class="section" id="m5-agents">
-    <h3>🤖 The /agents Command (Video 4)</h3>
-    <p>Create specialized AI assistants for specific tasks:</p>
+  <div class="section" id="m3-whyitmatters">
+    <h3>🎯 Why It Matters</h3>
+    <div class="glass orange">
+      <ul>
+        <li><strong>Claude Pro ($20/mo)</strong> — Claude Code (CLI), Mac & Windows</li>
+        <li><strong>Claude Max ($100/mo)</strong> — Claude Cowork (GUI), Mac only currently</li>
+      </ul>
+    </div>
+    <p>Cowork bridges the gap between Claude Code (developer-focused CLI) and everyday users who want autonomous AI assistance without touching a terminal. It's the "Iron Man suit" for non-developers.</p>
+  </div>
 
+  <div class="notes-section">
+    <label>📝 My Notes — Module 3 (Anthropic Official)</label>
+    <textarea data-key="notes-v3" placeholder="Thoughts on the official launch..."></textarea>
+    <div class="save-indicator">✓ Saved</div>
+  </div>
+  <button class="mark-complete-btn" data-module="mod3" onclick="toggleModuleComplete(this)">✅ Mark Complete</button>
+</div>
+
+<!-- ==================== MODULE 4: Vehav ==================== -->
+<div class="module" id="mod4">
+  <div class="module-badge">🎬 Module 4</div>
+  <h2>"Claude Code Just DESTROYED Every AI Workflow Tool"</h2>
+  <p>Complete mastery guide: /init, /agents, skills, and building an AI content army. By Vehav.</p>
+
+  <div class="section" id="m4-overview">
+    <h3>📺 Overview</h3>
+    <div class="yt-embed">
+      <iframe src="https://www.youtube.com/embed/_0xa6RVqTC8" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="video-card">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/_0xa6RVqTC8/maxresdefault.jpg" alt="Video 4">
+      </div>
+      <div class="video-info">
+        <h4>Claude Code Just DESTROYED Every AI Workflow Tool (Complete Mastery Guide)</h4>
+        <div class="meta"><span>Vehav</span></div>
+        <div class="tags"><span class="tag">/init</span><span class="tag">/agents</span><span class="tag">Skills</span><span class="tag">Content Army</span><span class="tag">Iron Man Analogy</span></div>
+      </div>
+    </div>
+    <p>Vehav walks through Claude Code from zero to building a full AI content army — live. He covers installation, the Iron Man analogy (browser Claude = Tony Stark without suit; Claude Code = full Iron Man with Jarvis), the three essential commands (/init, /agents, @), and chains multiple agents together to produce research, hooks, and a complete YouTube script automatically.</p>
+  </div>
+
+  <div class="section" id="m4-fundamentals">
+    <h3>🦾 Fundamentals & Why Claude Code</h3>
+    <div class="glass orange">
+      <div class="highlight-title orange">🔥 The Iron Man Analogy</div>
+      <p><strong>Claude in the browser</strong> = Tony Stark without the suit. Genius, but limited — gets tired, can only be in one place, forgets between conversations.</p>
+      <p><strong>Claude Code/Cowork</strong> = The full Iron Man suit with JARVIS. Unlimited capabilities, remembers everything, has access to all your files, never loses context, everything saved on your computer.</p>
+    </div>
+    <p><strong>Skills</strong> = Iron Man suit protocols (Stealth mode → Presentation skill, Hulkbuster → Complex coding, House Party Protocol → Multi-agent deployment)</p>
+    <p><strong>Agents</strong> = Your Iron Legion. Multiple AI assistants each specialized for a mission.</p>
+  </div>
+
+  <div class="section" id="m4-install">
+    <h3>🔧 Installation & Setup</h3>
+    <div class="glass">
+      <p><strong>Option 1: Terminal (CLI)</strong></p>
+      <div class="code-block">
+        <div class="code-header"><span>bash</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code># Mac
+brew install claude-code
+
+# Or via npm
+npm install -g @anthropic-ai/claude-code</code></pre>
+      </div>
+    </div>
+    <div class="glass">
+      <p><strong>Option 2: Desktop App (Easier)</strong></p>
+      <ol>
+        <li>Download the Claude desktop app</li>
+        <li>Log in with your Claude account</li>
+        <li>Click "Cowork" for non-dev interface, or "CLI" at bottom-right for terminal mode</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section" id="m4-cowork">
+    <h3>✨ The Cowork Moment</h3>
+    <p>Vehav demonstrates live: one prompt to research Claude Cowork → Claude searches TechCrunch, Axios, Fortune → organized markdown file with overview, key features, use cases, all sources listed. Research that takes hours, done in minutes.</p>
+    <p>Then <code>/init</code> creates a <code>claude.md</code> memory file so Claude remembers everything for future sessions.</p>
+  </div>
+
+  <div class="section" id="m4-skills">
+    <h3>🎯 Skills & Agents</h3>
+    <p><strong>/init</strong> — Creates claude.md memory file for the current folder:</p>
     <div class="code-block">
       <div class="code-header"><span>Claude Code CLI</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
-      <pre><code><span class="cmt"># Create a new agent</span>
-/agents
+      <pre><code>/init</code></pre>
+    </div>
 
-<span class="cmt"># Options:</span>
-<span class="cmt"># → Create new agent</span>
-<span class="cmt"># → Project level or Personal level</span>
-<span class="cmt"># → Generate with Claude (recommended)</span>
-<span class="cmt"># → Describe the task in natural language</span>
-<span class="cmt"># → Set permissions (all tools / read only)</span>
-<span class="cmt"># → Choose model (Opus for best quality)</span></code></pre>
+    <p><strong>/agents</strong> — Create specialized AI assistants:</p>
+    <div class="code-block">
+      <div class="code-header"><span>Claude Code CLI</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+      <pre><code>/agents
+# → Create new agent
+# → Project level or Personal level
+# → Generate with Claude (recommended)
+# → Describe the task in natural language
+# → Set permissions (all tools / read only)
+# → Choose model (Opus for best quality)</code></pre>
     </div>
 
     <div class="prompt-block">
       <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
       Create a script writing expert for short form content that goes viral. Include hook, body, CTA, and visual notes for my editor.
     </div>
+    <p>From just 3 sentences, Claude created an entire playbook with hook structure, body format, CTA guidelines, visual notes, and output format.</p>
+  </div>
 
-    <p><strong>Chaining agents together:</strong> Feed output from one agent to the next, like an assembly line:</p>
+  <div class="section" id="m4-army">
+    <h3>🎬 Building an AI Content Army</h3>
+    <p>Vehav chains 3 agents together like an assembly line:</p>
     <ol>
-      <li>Storytelling agent → creates narrative structure</li>
-      <li>YouTube analyst agent → adapts to your tone/style</li>
-      <li>Script writer agent → produces final output</li>
+      <li><strong>Research agent</strong> → gathers information</li>
+      <li><strong>Hook writer agent</strong> → creates viral hooks from research</li>
+      <li><strong>Storytelling agent</strong> → creates narrative structure</li>
+      <li><strong>YouTube analyst agent</strong> → adapts to your tone/style</li>
+      <li><strong>Script writer agent</strong> → produces final output</li>
     </ol>
 
-    <div class="glass green">
-      <div class="highlight-title green">💡 Token Efficiency</div>
-      <p>Each agent gets its own fresh 200K tokens. In Vehav's demo: agents used 15K tokens each, but main chat only used 4K. Without agents, all that work would've burned through the main context limit.</p>
-    </div>
-
-    <h4>How to invoke agents:</h4>
-    <ul>
-      <li>Use <code>@</code> symbol to reference agents by name in prompts</li>
-      <li>Use <code>@</code> to reference files too</li>
-      <li>Natural language works: "use the hook agent"</li>
-    </ul>
-  </div>
-
-  <div class="notes-section">
-    <label>📝 My Notes — Module 5</label>
-    <textarea data-key="notes-mod5" placeholder="MCP servers I want to set up..."></textarea>
-    <div class="save-indicator">✓ Saved</div>
-  </div>
-</div>
-
-<!-- ============ MODULE 6 ============ -->
-<div class="module" id="mod6">
-  <div class="module-badge">🎬 Module 6</div>
-  <h2>Building an AI Content Army</h2>
-  <p>Use Claude as your content team: research, write, script, all on autopilot. From Videos 1 & 4.</p>
-
-  <div class="section" id="m6-research">
-    <h3>🔍 Research Automation</h3>
-    <p>Instead of opening 10 tabs and copy-pasting, let Claude do it:</p>
     <div class="prompt-block">
       <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
-      Research [TOPIC] thoroughly. Pull from multiple sources. Save everything in a markdown file called research-[topic].md with sections: Overview, Key Findings, Sources.
-    </div>
-    <p>Claude searches the web, reads through articles (TechCrunch, Axios, etc.), and compiles organized research in minutes.</p>
-  </div>
-
-  <div class="section" id="m6-content">
-    <h3>✍️ Content Pipeline</h3>
-    <p>Alex Finn's daily output from just saying "Let's start our day":</p>
-
-    <div class="glass">
-      <div class="highlight-title purple">📋 The Content Assembly Line</div>
-      <ol>
-        <li><strong>Research phase</strong> — Claude researches topics from your to-do list</li>
-        <li><strong>Draft phase</strong> — Sub-agents write in parallel:
-          <ul>
-            <li>YouTube scripts</li>
-            <li>X/Twitter threads</li>
-            <li>Newsletter drafts</li>
-            <li>Strategy documents</li>
-          </ul>
-        </li>
-        <li><strong>Review phase</strong> — Everything lands in outbox/ for your review</li>
-      </ol>
+      Write me hooks using the research we already did in @cowork_research.md. Use the hook agent. Save everything in hooks.md.
     </div>
 
-    <h4>Vehav's Agent Chain for Scripts (Video 4):</h4>
     <div class="prompt-block">
       <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
       Using @research-file.md and @hooks.md:
@@ -769,57 +615,115 @@ Save the result as script-final.md
     </div>
 
     <div class="glass green">
-      <div class="highlight-title green">⚡ Parallel Research Tip</div>
-      <p>Send multiple research agents to search different platforms simultaneously: one for Instagram, one for LinkedIn, one for Reddit. Saves massive time.</p>
+      <div class="highlight-title green">💡 Token Efficiency</div>
+      <p>Agents used 15K tokens each, but main chat only used 4K. Each agent gets its own fresh 200K tokens. Without agents, all that work would've burned through the main context limit.</p>
     </div>
   </div>
 
-  <div class="section" id="m6-hooks">
-    <h3>🎣 Viral Hook Generation</h3>
-    <p>From Video 4 — create a hook-writing agent, then:</p>
+  <div class="section" id="m4-commands">
+    <h3>⚡ /init /agents Commands Reference</h3>
+    <table class="comp-table">
+      <thead><tr><th>Command</th><th>What It Does</th></tr></thead>
+      <tbody>
+        <tr><td><code>/init</code></td><td>Create claude.md memory file for current folder</td></tr>
+        <tr><td><code>/agents</code></td><td>Create/manage specialized agents</td></tr>
+        <tr><td><code>@filename</code></td><td>Reference a specific file in your prompt</td></tr>
+        <tr><td><code>@agentname</code></td><td>Invoke a specific agent</td></tr>
+        <tr><td><code>/clear</code></td><td>Clear current session</td></tr>
+        <tr><td><code>/compact</code></td><td>Compress context to save tokens</td></tr>
+      </tbody>
+    </table>
+    <p><strong>The 3 commands that built the entire Iron Legion:</strong></p>
+    <ol>
+      <li><code>/init</code> — gave Jarvis permanent memory</li>
+      <li><code>/agents</code> — deployed your Iron Legion</li>
+      <li><code>@</code> — targeted your files and agents</li>
+    </ol>
+  </div>
+
+  <div class="section" id="m4-prompts">
+    <h3>📋 Key Prompts</h3>
     <div class="prompt-block">
       <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
-      Write me hooks using the research we already did in @cowork_research.md. Use the hook agent. Save everything in hooks.md.
+      Research [TOPIC] thoroughly. Pull from multiple sources. Save everything in a markdown file called research-[topic].md with sections: Overview, Key Findings, Sources.
     </div>
-    <p>Vehav's agent created 7 hooks with different types, why each works, and what content it's best for — all from one prompt.</p>
   </div>
 
   <div class="notes-section">
-    <label>📝 My Notes — Module 6</label>
-    <textarea data-key="notes-mod6" placeholder="Content workflows I want to build..."></textarea>
+    <label>📝 My Notes — Module 4 (Vehav)</label>
+    <textarea data-key="notes-v4" placeholder="Agents I want to create, commands to try..."></textarea>
     <div class="save-indicator">✓ Saved</div>
   </div>
+  <button class="mark-complete-btn" data-module="mod4" onclick="toggleModuleComplete(this)">✅ Mark Complete</button>
 </div>
 
-<!-- ============ MODULE 7 ============ -->
-<div class="module" id="mod7">
-  <div class="module-badge">⚠️ Module 7</div>
-  <h2>Best Practices & Mistakes to Avoid</h2>
-  <p>Hard-won lessons from Professor Ras Mic and Edmund. These will save you money and frustration.</p>
+<!-- ==================== MODULE 5: Professor Ras Mic ==================== -->
+<div class="module" id="mod5">
+  <div class="module-badge">🎬 Module 5</div>
+  <h2>Professor Ras Mic — "Claude Code Clearly Explained"</h2>
+  <p>Best practices, plan mode, ask user question tool, Ralph loops. Intermediate-advanced.</p>
 
-  <div class="yt-embed">
-    <iframe src="https://www.youtube.com/embed/zxMjOqM7DFs" allowfullscreen loading="lazy"></iframe>
+  <div class="section" id="m5-overview">
+    <h3>📺 Overview</h3>
+    <div class="yt-embed">
+      <iframe src="https://www.youtube.com/embed/zxMjOqM7DFs" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="video-card">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/zxMjOqM7DFs/maxresdefault.jpg" alt="Video 5">
+      </div>
+      <div class="video-info">
+        <h4>Claude Code Clearly Explained (and how to use it)</h4>
+        <div class="meta"><span>Professor Ras Mic</span><span>Hosted by Greg</span></div>
+        <div class="tags"><span class="tag">Planning</span><span class="tag">Ask User Tool</span><span class="tag">Ralph Loops</span><span class="tag">Best Practices</span><span class="tag">Audacity</span></div>
+      </div>
+    </div>
+    <p>Professor Ras Mic delivers a crash course on mastering Claude Code with emphasis on planning over everything else. His core thesis: if your plan sucks, you're just donating money to Anthropic. He introduces the "ask user question tool" (the most slept-on feature), explains when to use Ralph loops (and when not to), and closes with powerful advice about context management, audacity, and building tasteful software.</p>
   </div>
 
-  <div class="section" id="m7-planning">
-    <h3>📝 #1: Planning is EVERYTHING</h3>
+  <div class="section" id="m5-bestpractices">
+    <h3>📝 Best Practices — Planning is EVERYTHING</h3>
     <div class="glass red">
-      <div class="highlight-title red">🚨 The Core Truth (Video 5)</div>
-      <p><em>"If your plan sucks, you're just donating money to Anthropic. And I think Anthropic has enough money."</em> — Professor Ras Mic</p>
+      <div class="highlight-title red">🚨 The Core Truth</div>
+      <p><em>"If your plan sucks, you're just donating money to Anthropic. And I think Anthropic has enough money."</em></p>
     </div>
-
     <ul>
       <li><strong>Garbage in = garbage out.</strong> Models are now so good that if you're getting slop, it's because you gave it slop.</li>
       <li><strong>Think in features, not products.</strong> Don't describe a product — describe each feature needed to build it.</li>
-      <li><strong>Use the Ask User Question Tool</strong> to force Claude to interview you until it knows EXACTLY what you want.</li>
-      <li><strong>Invest time in the PRD/plan file.</strong> The better your input, the better the output. No back-and-forth needed.</li>
+      <li><strong>Think of it like communicating to a human engineer.</strong> Sparse instructions → bad output. Precise instructions → great output.</li>
+      <li><strong>Invest time in the PRD/plan file.</strong> The better your input, the less back-and-forth needed.</li>
     </ul>
   </div>
 
-  <div class="section" id="m7-ralph">
-    <h3>🔁 #2: Ralph Loops — Use With Caution</h3>
-    <p>A Ralph loop goes through your plan and builds each feature step by step without stopping. Sounds amazing, but...</p>
+  <div class="section" id="m5-plan">
+    <h3>🗺️ Plan Mode & Ask User Question Tool</h3>
+    <p>Press <code>Shift+Tab</code> to toggle Plan Mode for Q&A sessions before writing code.</p>
+    <div class="glass purple">
+      <div class="highlight-title purple">🎯 The Ask User Question Tool — Most Slept-On Feature</div>
+      <p>Instead of letting Claude make assumptions, force it to interview you until it knows EXACTLY what you want:</p>
+    </div>
+    <div class="prompt-block">
+      <button class="copy-prompt" onclick="copyPrompt(this)">Copy</button>
+      Read this plan file. Interview me in detail using the ask user question tool about literally anything — technical implementation, UI/UX concerns, and trade-offs. Do not start building until you've exhausted all questions.
+    </div>
+    <p><strong>What happens:</strong></p>
+    <ul>
+      <li>Round 1: Core workflow and technical foundation questions</li>
+      <li>Round 2: UI/UX and design decisions</li>
+      <li>Round 3: Edge cases, storage, costs, minute details</li>
+      <li>It keeps asking until it knows EXACTLY what you want</li>
+    </ul>
+    <div class="glass orange">
+      <div class="highlight-title orange">⚠️ Warning</div>
+      <p><em>"It will ask a LOT of questions. A couple friends got annoyed. But it's worth it — especially for end-to-end features."</em></p>
+      <p><strong>Pro tip:</strong> If you don't know the answer to a technical question, copy it and ask ChatGPT/Claude browser for advice, then paste the answer back.</p>
+    </div>
+    <p>Without this tool, Claude's default plan mode asks 2 sets of questions and is ready to build. With it, Claude asks granular questions about workflow, costs, database choices, UI aesthetics, storage approaches, and dozens of minute details you wouldn't have thought about.</p>
+  </div>
 
+  <div class="section" id="m5-ralph">
+    <h3>🔁 Ralph Loops — Use With Caution</h3>
+    <p>A Ralph loop goes through your plan and builds each feature step by step without stopping.</p>
     <div class="glass orange">
       <div class="highlight-title orange">⚠️ Don't Use Ralph If...</div>
       <ul>
@@ -830,8 +734,7 @@ Save the result as script-final.md
       </ul>
       <p><em>"If you haven't built, deployed, and there isn't a URL that I can click on — you have no business using Ralph."</em></p>
     </div>
-
-    <h4>Professor Ras Mic's Ralph Setup (when you're ready):</h4>
+    <h4>Ras Mic's Ralph Setup (when you're ready):</h4>
     <ul>
       <li>Requires a good PRD file + progress.txt file</li>
       <li>For every feature built, it writes a <strong>test</strong></li>
@@ -841,118 +744,112 @@ Save the result as script-final.md
     </ul>
   </div>
 
-  <div class="section" id="m7-donts">
-    <h3>🚫 #3: Don't Obsess Over MCP/Skills/Plugins Early</h3>
+  <div class="section" id="m5-progress">
+    <h3>📊 Progress Tracking + Tests</h3>
+    <p>The Ralph loop maintains a <code>progress.txt</code> file documenting what's been built. Each feature gets a test — if the test fails, the agent goes back to fix it before moving on. This ensures quality even in autonomous mode.</p>
+    <div class="glass green">
+      <div class="highlight-title green">✅ The Priority Order</div>
+      <ol>
+        <li>Get good at <strong>planning</strong> (PRDs, ask user question tool)</li>
+        <li>Get your <strong>reps in</strong> — build without Ralph, one feature at a time</li>
+        <li><strong>Then</strong> add MCP servers, skills, plugins, Ralph loops</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section" id="m5-plugins">
+    <h3>🔌 Don't Obsess Over Plugins</h3>
     <div class="glass">
       <p><em>"I can almost guarantee these things are not the reason your product isn't working. Most of the time, it's your plan that sucks."</em></p>
     </div>
-    <p>The priority order:</p>
-    <ol>
-      <li>Get good at <strong>planning</strong> (PRDs, ask user question tool)</li>
-      <li>Get your <strong>reps in</strong> — build without Ralph, one feature at a time</li>
-      <li><strong>Then</strong> add MCP servers, skills, plugins, Ralph loops</li>
-    </ol>
+    <p>Skills, MCPs, plugins, prompt.md, agent.md — they're all just markdown files with a little extra. Don't get lost in the weeds. Focus on your plan first.</p>
   </div>
 
-  <div class="section" id="m7-context">
-    <h3>🧠 #4: Context Window Management</h3>
+  <div class="section" id="m5-takeaways">
+    <h3>🎯 Key Takeaways</h3>
     <div class="glass purple">
-      <div class="highlight-title purple">📊 The 50% Rule (Video 5)</div>
-      <p>Claude's context limit is 200K tokens. <strong>Don't go over 50% (100K tokens).</strong></p>
-      <p>After 50%, quality starts to deteriorate — <em>"people say it started off good but then went bad."</em></p>
-      <p><strong>Solution:</strong> Start a new session when you hit 40-50%. Claude Code auto-compacts and summarizes when it hits the limit.</p>
+      <div class="highlight-title purple">Professor Ras Mic's Tips & Tricks</div>
+      <ol>
+        <li><strong>Use the Ask User Question Tool</strong> — most slept-on feature in Claude Code</li>
+        <li><strong>Don't over-obsess on MCP/skills/plugins</strong> — your plan is usually the problem</li>
+        <li><strong>Use Ralph only after you've built without it</strong> — get your reps in first</li>
+        <li><strong>Context: Don't go over 50%</strong> — After 100K tokens (50% of 200K limit), quality deteriorates. Start a new session at 40-50%.</li>
+        <li><strong>Have audacity</strong> — Software development is easy now. Software engineering (great UX, taste, scroll-stopping design) is still hard. Use pen and paper. Sketch features. Think about how it should <em>feel</em>.</li>
+      </ol>
     </div>
-  </div>
-
-  <div class="section" id="m7-code-review">
-    <h3>🔍 #5: Always Review AI-Generated Code (Video 2)</h3>
-    <div class="glass">
-      <p><em>"AI generates code, but humans own it."</em> — Edmund</p>
-      <ul>
-        <li>Before pushing to production, start a new session and ask Claude to review the code it just wrote</li>
-        <li>Don't let AI make you lazy about security, performance, or error handling</li>
-        <li>Speed means nothing if your app is buggy or insecure</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section" id="m7-audacity">
-    <h3>💪 #6: Have Audacity (Video 5)</h3>
-    <div class="glass orange">
-      <div class="highlight-title orange">🎨 The Taste Factor</div>
-      <p>Software development is becoming easy. <strong>Software engineering is still hard.</strong></p>
-      <p>Great UX, tasteful design, scroll-stopping software — these require thought, care, and audacity. Pen and paper. Sketching features. Thinking about how it should <em>feel</em>.</p>
-      <p><em>"If building the AI chat interface is easy, what's going to make YOUR app different?"</em></p>
+    <div class="glass cyan">
+      <div class="highlight-title cyan">💡 The Audacity Factor</div>
+      <p><em>"If building the AI chat interface is easy, what's going to make YOUR app different? A little bit of audacity, a little bit of thought and care, and a little bit of taste goes a long way."</em></p>
     </div>
   </div>
 
   <div class="notes-section">
-    <label>📝 My Notes — Module 7</label>
-    <textarea data-key="notes-mod7" placeholder="Mistakes I want to avoid..."></textarea>
+    <label>📝 My Notes — Module 5 (Professor Ras Mic)</label>
+    <textarea data-key="notes-v5" placeholder="Planning improvements, when to use Ralph..."></textarea>
     <div class="save-indicator">✓ Saved</div>
   </div>
+  <button class="mark-complete-btn" data-module="mod5" onclick="toggleModuleComplete(this)">✅ Mark Complete</button>
 </div>
 
-<!-- ============ MODULE 8 ============ -->
-<div class="module" id="mod8">
-  <div class="module-badge">✅ Module 8</div>
-  <h2>Implementation Checklist</h2>
-  <p>Your personalized step-by-step guide. You already have OpenClaw/Clawdbot — you're ahead!</p>
+<!-- ==================== MODULE 6: Implementation Checklist ==================== -->
+<div class="module" id="mod6">
+  <div class="module-badge">✅ Module 6</div>
+  <h2>Implementation Checklist (Combined)</h2>
+  <p>Cross-video action items. Your personalized step-by-step guide.</p>
 
-  <div class="section" id="m8-setup">
+  <div class="section" id="m6-phase1">
     <h3>🔧 Phase 1: Setup (Do This Week)</h3>
     <ul class="checklist" data-key="checklist-phase1">
-      <li><input type="checkbox"> Create <code>~/Documents/claude/</code> folder with context/, inbox/, outbox/, skills/ subdirectories</li>
-      <li><input type="checkbox"> Write your <code>claude.md</code> rules file with the Daily OS template from Module 2</li>
-      <li><input type="checkbox"> Fill out <code>context/profile.md</code> — your goals, preferences, projects</li>
-      <li><input type="checkbox"> Fill out <code>context/projects.md</code> — list all current projects (Clawdbot, sites, etc.)</li>
-      <li><input type="checkbox"> Run <code>/init</code> on your main project folders to create project-level claude.md files</li>
-      <li><input type="checkbox"> Try the morning routine: "Let's start our day" — answer the 3 questions</li>
+      <li><input type="checkbox"> Create <code>~/Documents/claude/</code> folder with context/, inbox/, outbox/, skills/ (Video 1)</li>
+      <li><input type="checkbox"> Write your <code>claude.md</code> rules file with Daily OS template (Video 1)</li>
+      <li><input type="checkbox"> Fill out <code>context/profile.md</code> — goals, preferences, projects (Video 1)</li>
+      <li><input type="checkbox"> Run <code>/init</code> on your main project folders (Video 4)</li>
+      <li><input type="checkbox"> Try the morning routine: "Let's start our day" — answer the 3 questions (Video 1)</li>
+      <li><input type="checkbox"> Try the end-of-day routine: "End of day" (Video 1)</li>
     </ul>
   </div>
 
-  <div class="section" id="m8-learn">
+  <div class="section" id="m6-phase2">
     <h3>📚 Phase 2: Learn the Basics (Week 2)</h3>
     <ul class="checklist" data-key="checklist-phase2">
-      <li><input type="checkbox"> Use <code>#</code> key to save 5+ instruction snippets to memory</li>
-      <li><input type="checkbox"> Create your first custom command in <code>.claude/commands/</code></li>
-      <li><input type="checkbox"> Try Plan Mode (<code>Shift+Tab</code>) for a feature you want to build</li>
-      <li><input type="checkbox"> Use the <strong>Ask User Question Tool</strong> prompt for detailed planning</li>
-      <li><input type="checkbox"> Build one complete feature without Ralph — get your reps in</li>
-      <li><input type="checkbox"> Try the end-of-day routine: "End of day"</li>
+      <li><input type="checkbox"> Use <code>#</code> key to save 5+ instruction snippets to memory (Video 2)</li>
+      <li><input type="checkbox"> Create your first custom command in <code>.claude/commands/</code> (Video 2)</li>
+      <li><input type="checkbox"> Try Plan Mode (<code>Shift+Tab</code>) for a feature (Video 5)</li>
+      <li><input type="checkbox"> Use the <strong>Ask User Question Tool</strong> prompt for detailed planning (Video 5)</li>
+      <li><input type="checkbox"> Build one complete feature without Ralph — get your reps in (Video 5)</li>
+      <li><input type="checkbox"> Set up Context7 MCP server for documentation (Video 2)</li>
     </ul>
   </div>
 
-  <div class="section" id="m8-power">
+  <div class="section" id="m6-phase3">
     <h3>⚡ Phase 3: Power Up (Week 3-4)</h3>
     <ul class="checklist" data-key="checklist-phase3">
-      <li><input type="checkbox"> Set up Context7 MCP server for documentation</li>
-      <li><input type="checkbox"> Create your first agent with <code>/agents</code></li>
-      <li><input type="checkbox"> Try chaining 2+ agents together on a content task</li>
-      <li><input type="checkbox"> Build a sub-agent for UI/UX review with Playwright</li>
-      <li><input type="checkbox"> Try parallel sub-agents on a research task</li>
-      <li><input type="checkbox"> Write 3+ custom skills in your skills/ folder</li>
+      <li><input type="checkbox"> Create your first agent with <code>/agents</code> (Video 4)</li>
+      <li><input type="checkbox"> Try chaining 2+ agents together on a content task (Video 4)</li>
+      <li><input type="checkbox"> Build a sub-agent for UI/UX review with Playwright (Video 2)</li>
+      <li><input type="checkbox"> Try parallel sub-agents on a research task (Videos 1 & 4)</li>
+      <li><input type="checkbox"> Write 3+ custom skills in your skills/ folder (Video 1)</li>
+      <li><input type="checkbox"> Explore plugins — clone a power user's setup (Video 2)</li>
     </ul>
   </div>
 
-  <div class="section" id="m8-master">
+  <div class="section" id="m6-phase4">
     <h3>🏆 Phase 4: Mastery (Month 2+)</h3>
     <ul class="checklist" data-key="checklist-phase4">
-      <li><input type="checkbox"> Set up a Ralph loop with tests + linting (Ras Mic's approach)</li>
-      <li><input type="checkbox"> Build a full content pipeline: research → hooks → script → output</li>
-      <li><input type="checkbox"> Explore plugins — clone a power user's setup</li>
+      <li><input type="checkbox"> Set up a Ralph loop with tests + linting (Video 5 — Ras Mic's approach)</li>
+      <li><input type="checkbox"> Build a full content pipeline: research → hooks → script → output (Video 4)</li>
+      <li><input type="checkbox"> Create a personalized Daily OS that fits YOUR routine (Video 1)</li>
+      <li><input type="checkbox"> Ship something with a public URL (Video 5 — prerequisite for Ralph)</li>
       <li><input type="checkbox"> Integrate with your OpenClaw/Clawdbot workflow</li>
-      <li><input type="checkbox"> Create a personalized Daily OS that fits YOUR routine</li>
-      <li><input type="checkbox"> Ship something with a public URL</li>
     </ul>
   </div>
 
-  <div class="section" id="m8-resources">
-    <h3>🔗 All Resources</h3>
+  <div class="section" id="m6-resources">
+    <h3>🔗 All Resources & Links</h3>
     <div class="glass">
       <h4>Videos</h4>
       <ul>
-        <li><a href="https://youtu.be/rdURhrS4xHI" target="_blank" style="color:var(--orange)">Video 1: Claude Cowork is the best AI tool of 2026 — Alex Finn</a></li>
+        <li><a href="https://www.youtube.com/watch?v=rdURhrS4xHI" target="_blank" style="color:var(--orange)">Video 1: Claude Cowork is the best AI tool of 2026 — Alex Finn</a></li>
         <li><a href="https://www.youtube.com/watch?v=Ffh9OeJ7yxw" target="_blank" style="color:var(--orange)">Video 2: 800+ hours of Claude Code — Edmund</a></li>
         <li><a href="https://www.youtube.com/watch?v=UAmKyyZ-b9E" target="_blank" style="color:var(--orange)">Video 3: Introducing Cowork — Anthropic Official</a></li>
         <li><a href="https://www.youtube.com/watch?v=_0xa6RVqTC8" target="_blank" style="color:var(--orange)">Video 4: Complete Mastery Guide — Vehav</a></li>
@@ -963,22 +860,22 @@ Save the result as script-final.md
     <div class="glass">
       <h4>Key Commands Cheat Sheet</h4>
       <table class="comp-table">
-        <thead><tr><th>Command</th><th>What It Does</th></tr></thead>
+        <thead><tr><th>Command</th><th>What It Does</th><th>Source</th></tr></thead>
         <tbody>
-          <tr><td><code>/init</code></td><td>Create claude.md memory file for current folder</td></tr>
-          <tr><td><code>/agents</code></td><td>Create/manage specialized agents</td></tr>
-          <tr><td><code>#</code></td><td>Add instruction snippets to memory</td></tr>
-          <tr><td><code>Shift+Tab</code></td><td>Toggle Plan Mode</td></tr>
-          <tr><td><code>@filename</code></td><td>Reference a specific file</td></tr>
-          <tr><td><code>@agentname</code></td><td>Invoke a specific agent</td></tr>
-          <tr><td><code>/clear</code></td><td>Clear current session</td></tr>
-          <tr><td><code>/compact</code></td><td>Compress context to save tokens</td></tr>
+          <tr><td><code>/init</code></td><td>Create claude.md memory file for current folder</td><td>Video 4</td></tr>
+          <tr><td><code>/agents</code></td><td>Create/manage specialized agents</td><td>Video 4</td></tr>
+          <tr><td><code>#</code></td><td>Add instruction snippets to memory</td><td>Video 2</td></tr>
+          <tr><td><code>Shift+Tab</code></td><td>Toggle Plan Mode</td><td>Video 5</td></tr>
+          <tr><td><code>@filename</code></td><td>Reference a specific file</td><td>Video 4</td></tr>
+          <tr><td><code>@agentname</code></td><td>Invoke a specific agent</td><td>Video 4</td></tr>
+          <tr><td><code>/clear</code></td><td>Clear current session</td><td>—</td></tr>
+          <tr><td><code>/compact</code></td><td>Compress context to save tokens</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="glass">
-      <h4>MCP Servers to Install</h4>
+      <h4>MCP Servers to Install (Video 2 — Edmund)</h4>
       <ul>
         <li><strong>Context7</strong> — Up-to-date library documentation</li>
         <li><strong>Supabase</strong> — Database queries and migrations</li>
@@ -991,62 +888,68 @@ Save the result as script-final.md
   </div>
 
   <div class="notes-section">
-    <label>📝 My Notes — Module 8</label>
-    <textarea data-key="notes-mod8" placeholder="My implementation plan and timeline..."></textarea>
+    <label>📝 My Notes — Implementation Plan</label>
+    <textarea data-key="notes-v6" placeholder="My implementation plan and timeline..."></textarea>
     <div class="save-indicator">✓ Saved</div>
   </div>
+  <button class="mark-complete-btn" data-module="mod6" onclick="toggleModuleComplete(this)">✅ Mark Complete</button>
 </div>
 
 </main>
 
+<canvas class="confetti-canvas" id="confettiCanvas"></canvas>
+
 <script>
-// Sidebar navigation data
 const modules = [
-  {id:'mod1',title:'Overview',icon:'📋',lessons:[
-    {id:'m1-what',title:'What is Claude Cowork?'},
-    {id:'m1-videos',title:'The 5 Videos'}
+  {id:'mod1',title:'Video 1: Alex Finn',icon:'🎬',lessons:[
+    {id:'m1-overview',title:'Overview'},
+    {id:'m1-dailyos',title:'Daily OS Workflow'},
+    {id:'m1-questions',title:'3 Morning Questions'},
+    {id:'m1-folder',title:'Folder System'},
+    {id:'m1-subagents',title:'Sub-Agents'},
+    {id:'m1-endofday',title:'End of Day'},
+    {id:'m1-prompts',title:'Key Prompts & Templates'}
   ]},
-  {id:'mod2',title:'Setup & Installation',icon:'⚙️',lessons:[
-    {id:'m2-install',title:'Installation'},
-    {id:'m2-folder',title:'The Folder System'},
-    {id:'m2-claudemd',title:'claude.md Rules File'},
-    {id:'m2-init',title:'/init Command'}
+  {id:'mod2',title:'Video 2: Edmund',icon:'🎬',lessons:[
+    {id:'m2-overview',title:'Overview'},
+    {id:'m2-dry',title:'D.R.Y. Principle'},
+    {id:'m2-mcp',title:'Favorite MCP Servers'},
+    {id:'m2-parallel',title:'Parallel Feature Building'},
+    {id:'m2-clone',title:'Clone Cracked Setups'},
+    {id:'m2-excel',title:'Excel at AI Coding'},
+    {id:'m2-takeaways',title:'Key Takeaways'}
   ]},
-  {id:'mod3',title:'Daily OS Workflow',icon:'☀️',lessons:[
-    {id:'m3-morning',title:'Morning Routine'},
-    {id:'m3-execution',title:'Execution & Sub-agents'},
-    {id:'m3-endofday',title:'End of Day'}
+  {id:'mod3',title:'Video 3: Anthropic',icon:'🎬',lessons:[
+    {id:'m3-overview',title:'What Cowork Is'},
+    {id:'m3-features',title:'Key Features'},
+    {id:'m3-howitworks',title:'How It Works'},
+    {id:'m3-whyitmatters',title:'Why It Matters'}
   ]},
-  {id:'mod4',title:'Power Techniques',icon:'⚡',lessons:[
-    {id:'m4-dry',title:'D.R.Y. Principle'},
-    {id:'m4-plan',title:'Plan Mode & Ask User Tool'},
-    {id:'m4-parallel',title:'Parallel Building'},
-    {id:'m4-clone',title:'Clone Setups (Plugins)'}
+  {id:'mod4',title:'Video 4: Vehav',icon:'🎬',lessons:[
+    {id:'m4-overview',title:'Overview'},
+    {id:'m4-fundamentals',title:'Fundamentals & Why'},
+    {id:'m4-install',title:'Installation & Setup'},
+    {id:'m4-cowork',title:'The Cowork Moment'},
+    {id:'m4-skills',title:'Skills & Agents'},
+    {id:'m4-army',title:'Building AI Content Army'},
+    {id:'m4-commands',title:'/init /agents Commands'},
+    {id:'m4-prompts',title:'Key Prompts'}
   ]},
-  {id:'mod5',title:'MCP Servers & Skills',icon:'🔌',lessons:[
-    {id:'m5-mcp',title:'MCP Servers'},
-    {id:'m5-skills',title:'Skills System'},
-    {id:'m5-agents',title:'/agents Command'}
+  {id:'mod5',title:'Video 5: Ras Mic',icon:'🎬',lessons:[
+    {id:'m5-overview',title:'Overview'},
+    {id:'m5-bestpractices',title:'Best Practices'},
+    {id:'m5-plan',title:'Plan Mode & Ask User Tool'},
+    {id:'m5-ralph',title:'Ralph Loops'},
+    {id:'m5-progress',title:'Progress Tracking + Tests'},
+    {id:'m5-plugins',title:'Don\'t Obsess Over Plugins'},
+    {id:'m5-takeaways',title:'Key Takeaways'}
   ]},
-  {id:'mod6',title:'AI Content Army',icon:'🎬',lessons:[
-    {id:'m6-research',title:'Research Automation'},
-    {id:'m6-content',title:'Content Pipeline'},
-    {id:'m6-hooks',title:'Viral Hook Generation'}
-  ]},
-  {id:'mod7',title:'Best Practices',icon:'⚠️',lessons:[
-    {id:'m7-planning',title:'Planning is Everything'},
-    {id:'m7-ralph',title:'Ralph Loops'},
-    {id:'m7-donts',title:'Don\'t Over-Obsess'},
-    {id:'m7-context',title:'Context Management'},
-    {id:'m7-code-review',title:'Review AI Code'},
-    {id:'m7-audacity',title:'Have Audacity'}
-  ]},
-  {id:'mod8',title:'Implementation Checklist',icon:'✅',lessons:[
-    {id:'m8-setup',title:'Phase 1: Setup'},
-    {id:'m8-learn',title:'Phase 2: Learn Basics'},
-    {id:'m8-power',title:'Phase 3: Power Up'},
-    {id:'m8-master',title:'Phase 4: Mastery'},
-    {id:'m8-resources',title:'All Resources'}
+  {id:'mod6',title:'Implementation Checklist',icon:'✅',lessons:[
+    {id:'m6-phase1',title:'Phase 1: Setup'},
+    {id:'m6-phase2',title:'Phase 2: Learn Basics'},
+    {id:'m6-phase3',title:'Phase 3: Power Up'},
+    {id:'m6-phase4',title:'Phase 4: Mastery'},
+    {id:'m6-resources',title:'All Resources'}
   ]}
 ];
 
@@ -1123,23 +1026,88 @@ document.querySelectorAll('.checklist').forEach(cl => {
   });
 });
 
+// Module completion — localStorage
+function toggleModuleComplete(btn) {
+  const mod = btn.dataset.module;
+  const key = 'ccm-complete-' + mod;
+  const isComplete = localStorage.getItem(key) === 'true';
+  if(isComplete) {
+    localStorage.removeItem(key);
+    btn.classList.remove('completed');
+    btn.textContent = '✅ Mark Complete';
+  } else {
+    localStorage.setItem(key, 'true');
+    btn.classList.add('completed');
+    btn.textContent = '✓ Completed!';
+    fireConfetti();
+  }
+  updateProgress();
+}
+
+// Restore module completion states
+document.querySelectorAll('.mark-complete-btn').forEach(btn => {
+  const mod = btn.dataset.module;
+  if(localStorage.getItem('ccm-complete-' + mod) === 'true') {
+    btn.classList.add('completed');
+    btn.textContent = '✓ Completed!';
+  }
+});
+
 // Progress tracking
 function updateProgress() {
-  const allChecks = document.querySelectorAll('.checklist input[type="checkbox"]');
-  const checked = [...allChecks].filter(c => c.checked).length;
-  const total = allChecks.length;
-  const pct = total ? Math.round(checked / total * 100) : 0;
+  const totalMods = 6;
+  let completedMods = 0;
+  for(let i = 1; i <= totalMods; i++) {
+    if(localStorage.getItem('ccm-complete-mod' + i) === 'true') completedMods++;
+  }
+  const pct = Math.round(completedMods / totalMods * 100);
   document.getElementById('progressFill').style.width = pct + '%';
-  
-  // Count completed modules (all checks in a checklist done)
-  let modsDone = 0;
-  document.querySelectorAll('.checklist').forEach(cl => {
-    const cbs = cl.querySelectorAll('input[type="checkbox"]');
-    if(cbs.length && [...cbs].every(c => c.checked)) modsDone++;
-  });
-  document.getElementById('progressText').textContent = `${checked}/${total} tasks (${pct}%)`;
+  document.getElementById('progressText').textContent = `${completedMods}/${totalMods} modules completed`;
 }
 updateProgress();
+
+// Confetti
+function fireConfetti() {
+  const canvas = document.getElementById('confettiCanvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  const particles = [];
+  const colors = ['#cc785c','#8b5cf6','#22c55e','#06b6d4','#eab308','#ef4444'];
+  for(let i = 0; i < 150; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height - canvas.height,
+      r: Math.random() * 6 + 2,
+      d: Math.random() * 150,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      tilt: Math.random() * 10 - 10,
+      tiltAngle: 0,
+      tiltAngleInc: Math.random() * .07 + .05
+    });
+  }
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.lineWidth = p.r;
+      ctx.strokeStyle = p.color;
+      ctx.moveTo(p.x + p.tilt + p.r, p.y);
+      ctx.lineTo(p.x + p.tilt, p.y + p.tilt + p.r);
+      ctx.stroke();
+    });
+    particles.forEach(p => {
+      p.tiltAngle += p.tiltAngleInc;
+      p.y += (Math.cos(p.d) + 3 + p.r / 2) * .8;
+      p.tilt = Math.sin(p.tiltAngle) * 15;
+    });
+    frame++;
+    if(frame < 120) requestAnimationFrame(draw);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  draw();
+}
 </script>
 
 </body>
